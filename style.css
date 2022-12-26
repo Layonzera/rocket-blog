@@ -1,0 +1,136 @@
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--purple-bg);
+  height: 58.7rem;
+  padding: 6.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+ul li a:hover {
+  font-weight: 700;
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 100%;
+  bottom: 0;
+  left: -0.3rem;
+  background-color: var(--green);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+ul li a:hover:before {
+  opacity: 1;
+  height: 100%;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 0.1rem 0.2rem rgba(0, 0, 0, 0.25));
+}
+
+.fieldset-wrapper input {
+  padding: 1.4rem 2.5rem;
+  background-color: var(--dark-bg);
+  border: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  outline: none;
+}
+
+.fieldset-wrapper input::placeholder {
+  color: #fff;
+}
+
+.fieldset-wrapper button {
+  border: none;
+  background-color: var(--button-bg);
+  height: 4.4rem;
+  padding: 1rem 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+}
+
+.wellcome {
+  max-width: 117rem;
+  margin: 6.4rem auto 0;
+  display: flex;
+  gap: 3rem;
+}
+
+.text-group h1 {
+  color: var(--button-bg);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.text-group p {
+  max-width: 46.9rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--white);
+  margin-bottom: 2.4rem;
+}
+
+.text-group a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--button-bg);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-decoration: none;
+}
